@@ -1,0 +1,12 @@
+New readme file :D
+
+Problem sve vreme je bio sa matricom zauzetih polja. Ne moze 
+da se koristi lista, vec mora numpy niz. Na Linuxu kada napravis
+exe file izgleda da nije strasno memorijski, nije prezahtevno. Medjutim
+na Windowsu jeste. Obilaznica -- napraviti okruzenje sa numpy bez mkl
+biblioteka i onda u njemu buildovati exe file.
+
+To cu da uradim kada verzija bude funkcionalna i za siru javnost.
+
+Trenutni krucijalni problemi:
+  2. igra ne prepoznaje kraj kada se poslednji element postavi u sred niza
