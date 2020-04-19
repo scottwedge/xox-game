@@ -121,7 +121,7 @@ def main(dic):
 			game = netw.send_recv("get")
 		except:
 			run = False
-			print("did not sent or recieved game data")
+			print("did not sent or received game data")
 
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
@@ -187,7 +187,7 @@ while run_main:
 				print(msg)
 				pass
 			elif (dic=="socket_err"):
-				print("Error in sending / recieveing data.")
+				print("Error in sending / receiving data.")
 				run_main = False
 			else:
 			 	# if everything is Ok start the game

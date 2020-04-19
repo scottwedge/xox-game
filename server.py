@@ -79,10 +79,10 @@ while run_server:
 	conn, addr = s.accept()
 	print("Conetcted to: ", addr) # IP address of connection
 
-	# recieve data initialisation from the client
+	# receive data initialisation from the client
 	init_data, flag = recv_data(conn)
 
-	# if we recieved data go!
+	# if we received data go!
 	if flag:
 		# if the user is creating the new game go!
 		if init_data["new"]:
@@ -133,4 +133,4 @@ while run_server:
 	else:
 		# game kill (socket error)
 		send_data(conn, "socket_err")
-		print("Bad inital data recieve :/")
+		print("Bad inital data receive :/")
